@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
+  <title>درباره ما | فروش برتر - اصالت و تعهد در ارائه تکنولوژی</title>
+  <meta name="description" content="آشنایی با فروشگاه فروش برتر، استانداردهای تضمین کیفیت، اصالت کالا و راهنمای ثبت سفارش مستقیم در تلگرام."/>
+  
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="درباره ما | فروش برتر"/>
+  <meta property="og:description" content="ما تکنولوژی را ساده، اصیل و بدون واسطه به دست شما می‌رسانیم."/>
+  <meta property="og:image" content="assets/images/sonic-pro.jpeg"/>
+
+  <link rel="icon" type="image/png" href="assets/images/logo.png"/>
+
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css"/>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-variant": "#e2e2e4",
+            "surface": "#f9f9fb",
+            "tertiary-fixed": "#e3e2e7",
+            "background": "#f9f9fb",
+            "on-secondary-fixed": "#1b1b1d",
+            "tertiary-container": "#737378",
+            "on-primary-fixed": "#001b3f",
+            "surface-tint": "#005cbb",
+            "on-tertiary-container": "#fcfaff",
+            "surface-container-low": "#f3f3f5",
+            "inverse-primary": "#abc7ff",
+            "on-primary-fixed-variant": "#00458f",
+            "surface-container-highest": "#e2e2e4",
+            "surface-container-lowest": "#ffffff",
+            "secondary-fixed": "#e4e2e4",
+            "surface-container": "#eeeef0",
+            "tertiary-fixed-dim": "#c7c6cb",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed": "#1a1b1f",
+            "primary-fixed-dim": "#abc7ff",
+            "surface-dim": "#d9dadc",
+            "on-primary-container": "#fcfbff",
+            "on-surface": "#1a1c1d",
+            "inverse-on-surface": "#f0f0f2",
+            "on-error-container": "#93000a",
+            "on-surface-variant": "#414753",
+            "on-tertiary": "#ffffff",
+            "outline": "#717785",
+            "secondary": "#5f5e60",
+            "primary": "#0059b5",
+            "surface-container-high": "#e8e8ea",
+            "surface-bright": "#f9f9fb",
+            "on-secondary-fixed-variant": "#474649",
+            "primary-fixed": "#d7e2ff",
+            "outline-variant": "#c1c6d6",
+            "secondary-container": "#e2dfe1",
+            "error-container": "#ffdad6",
+            "primary-container": "#0071e3",
+            "tertiary": "#5a5b5f",
+            "error": "#ba1a1a",
+            "on-secondary-container": "#636264",
+            "on-primary": "#ffffff",
+            "on-background": "#1a1c1d",
+            "inverse-surface": "#2f3132",
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed-variant": "#46464b",
+            "secondary-fixed-dim": "#c8c6c8"
+          },
+          fontFamily: {
+            sans: ["'Vazirmatn'", "'Plus Jakarta Sans'", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-white pb-20 md:pb-0">
+
+  <!-- Top Navigation Header -->
+  <header class="fixed top-0 w-full z-50 pt-safe glass-nav">
+    <div class="max-w-6xl mx-auto h-16 px-4 sm:px-6 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2.5 group">
+        <img src="assets/images/logo.png" alt="لوگوی فروش برتر" class="h-8 w-auto object-contain transition-transform group-hover:scale-105"/>
+        <span class="text-xl font-bold text-on-surface tracking-tight">فروش برتر</span>
+        <span class="hidden md:inline-block text-xs text-on-surface-variant pr-2 border-r border-outline-variant/40 font-medium">درباره ما</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+        <a href="index.html" class="text-on-surface-variant hover:text-primary transition-colors">صفحه اصلی</a>
+        <a href="products.html" class="text-on-surface-variant hover:text-primary transition-colors">محصولات</a>
+        <a href="about.html" class="text-primary font-bold hover:text-primary-container transition-colors">درباره ما</a>
+        <a href="contact.html" class="text-on-surface-variant hover:text-primary transition-colors">تماس با ما</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="https://t.me/FrooshBartar_Support" target="_blank" rel="noopener noreferrer" aria-label="پشتیبانی تلگرام" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+          <span class="material-symbols-outlined text-[22px]">send</span>
+        </a>
+        <button onclick="openSearchModal()" aria-label="جستجو" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+          <span class="material-symbols-outlined text-[22px]">search</span>
+        </button>
+        <button onclick="openProfileModal()" aria-label="پروفایل" class="w-8 h-8 rounded-full bg-primary hover:bg-primary-container text-white flex items-center justify-center transition-all shadow-sm">
+          <span class="material-symbols-outlined text-[18px]">person</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Main Content -->
+  <main class="flex flex-col relative w-full pt-20 flex-grow px-4 sm:px-6">
+    <div class="max-w-4xl mx-auto w-full py-10">
+
+      <!-- Hero Story Section -->
+      <section class="text-center mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary mb-4">
+          <span class="material-symbols-outlined text-[16px]">verified</span>
+          <span class="text-xs font-bold">داستان فروش برتر</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-on-surface mb-4 leading-tight">
+          ما تکنولوژی را ساده، اصیل و بدون واسطه به دست شما می‌رسانیم
+        </h1>
+        <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed max-w-2xl mx-auto">
+          فروش برتر با هدف حذف پیچیدگی‌های خرید لوازم جانبی دیجیتال و پایان دادن به دغدغه اصالت کالا شکل گرفته است. ما باور داریم دسترسی به گجت‌های پیشرفته دنیا باید سریع، شفاف و همراه با پشتیبانی مطمئن باشد.
+        </p>
+      </section>
+
+      <!-- Key Performance Numbers / Metric Proof -->
+      <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+        <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/20 text-center shadow-sm">
+          <span class="text-3xl font-extrabold text-primary block mb-1 tabular-nums">+۵,۰۰۰</span>
+          <span class="text-xs text-on-surface-variant">سفارش موفق و تحویل شده</span>
+        </div>
+        <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/20 text-center shadow-sm">
+          <span class="text-3xl font-extrabold text-primary block mb-1 tabular-nums">۱۰۰٪</span>
+          <span class="text-xs text-on-surface-variant">تضمین اصالت فیزیکی قطعات</span>
+        </div>
+        <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/20 text-center shadow-sm">
+          <span class="text-3xl font-extrabold text-primary block mb-1 tabular-nums">۲۴/۷</span>
+          <span class="text-xs text-on-surface-variant">پاسخگویی سریع در تلگرام</span>
+        </div>
+        <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/20 text-center shadow-sm">
+          <span class="text-3xl font-extrabold text-primary block mb-1 tabular-nums">۷ روز</span>
+          <span class="text-xs text-on-surface-variant">مهلت تست و تعویض کالا</span>
+        </div>
+      </section>
+
+      <!-- Core Values (4 Pillars) -->
+      <section class="mb-16">
+        <div class="text-center sm:text-right mb-8">
+          <h2 class="text-2xl font-bold text-on-surface">اصول بنیادین در فروش برتر</h2>
+          <p class="text-xs sm:text-sm text-on-surface-variant mt-1">تعهداتی که در هر خرید به آن وفادار می‌مانیم</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="bg-surface-container-low p-6 rounded-3xl border border-outline-variant/15 flex flex-col justify-between">
+            <div class="w-12 h-12 rounded-2xl bg-white text-primary flex items-center justify-center mb-4 shadow-sm">
+              <span class="material-symbols-outlined text-[26px]">verified_user</span>
+            </div>
+            <h3 class="text-base font-bold text-on-surface mb-2">اصالت تضمین‌شده و بدون ابهام</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              تمامی کالاها قبل از ارسال توسط کارشناسان فنی از لحاظ اصالت مدارها، سلامت باتری و هولوگرام تست می‌شوند تا خریدار تجربه‌ای بی‌نقص داشته باشد.
+            </p>
+          </div>
+
+          <div class="bg-surface-container-low p-6 rounded-3xl border border-outline-variant/15 flex flex-col justify-between">
+            <div class="w-12 h-12 rounded-2xl bg-white text-primary flex items-center justify-center mb-4 shadow-sm">
+              <span class="material-symbols-outlined text-[26px]">chat</span>
+            </div>
+            <h3 class="text-base font-bold text-on-surface mb-2">سفارش مستقیم و گفتگوی انسانی</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              به جای سیستم‌های خودکار و بی‌روح، شما مستقیماً با کارشناس فروش در تلگرام گفتگو می‌کنید؛ سوالات خود را می‌پرسید و وضعیت ارسال را پیگیری می‌کنید.
+            </p>
+          </div>
+
+          <div class="bg-surface-container-low p-6 rounded-3xl border border-outline-variant/15 flex flex-col justify-between">
+            <div class="w-12 h-12 rounded-2xl bg-white text-primary flex items-center justify-center mb-4 shadow-sm">
+              <span class="material-symbols-outlined text-[26px]">inventory</span>
+            </div>
+            <h3 class="text-base font-bold text-on-surface mb-2">بسته‌بندی ایمن ضدضربه</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              گجت‌های حساس دیجیتال با پوشش‌های محافظ چندلایه حباب‌دار و بسته‌بندی مقاوم آماده می‌شوند تا در سلامت کامل به سراسر ایران تحویل گردند.
+            </p>
+          </div>
+
+          <div class="bg-surface-container-low p-6 rounded-3xl border border-outline-variant/15 flex flex-col justify-between">
+            <div class="w-12 h-12 rounded-2xl bg-white text-primary flex items-center justify-center mb-4 shadow-sm">
+              <span class="material-symbols-outlined text-[26px]">published_with_changes</span>
+            </div>
+            <h3 class="text-base font-bold text-on-surface mb-2">ضمانت بازگشت وجه و تعویض</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              در صورت بروز هرگونه مشکل عملکردی یا عدم رضایت از اصالت کالا، امکان بازگشت وجه یا تعویض سریع کالا تا ۷ روز پس از دریافت فراهم است.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section (راهنمای خرید و سوالات متداول) -->
+      <section class="mb-16" id="guide">
+        <div class="text-center sm:text-right mb-8">
+          <h2 class="text-2xl font-bold text-on-surface">راهنمای خرید و سوالات متداول</h2>
+          <p class="text-xs sm:text-sm text-on-surface-variant mt-1">پاسخ به پرتکرارترین پرسش‌های کاربران گرامی</p>
+        </div>
+
+        <div class="space-y-3">
+          <!-- FAQ 1 -->
+          <details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/20 p-5 cursor-pointer shadow-sm">
+            <summary class="flex items-center justify-between font-bold text-sm text-on-surface list-none">
+              <span>۱. چگونه می‌توانم در تلگرام سفارش خود را ثبت کنم؟</span>
+              <span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <p class="text-xs text-on-surface-variant leading-relaxed mt-3 pt-3 border-t border-outline-variant/15">
+              کافی است روی دکمه «سفارش در تلگرام» هر محصول در وب‌سایت کلیک کنید. پیامی شامل نام محصول، تعداد، رنگ انتخابی و قیمت برای پشتیبان ما در تلگرام ارسال می‌شود. پس از تایید موجودی، پرداخت انجام شده و کد رهگیری پستی خدمت شما تقدیم خواهد شد.
+            </p>
+          </details>
+
+          <!-- FAQ 2 -->
+          <details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/20 p-5 cursor-pointer shadow-sm">
+            <summary class="flex items-center justify-between font-bold text-sm text-on-surface list-none">
+              <span>۲. زمان و روش‌های ارسال به چه صورت است؟</span>
+              <span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <p class="text-xs text-on-surface-variant leading-relaxed mt-3 pt-3 border-t border-outline-variant/15">
+              سفارش‌های تهران در همان روز یا نهایتاً ۲۴ ساعت با پیک ویژه ارسال می‌گردند. سفارش‌های سایر شهرستان‌ها ظرف ۲ الی ۳ روز کاری از طریق پست پیشتاز یا تیپاکس به همراه بیمه مرسوله تحویل داده می‌شوند.
+            </p>
+          </details>
+
+          <!-- FAQ 3 -->
+          <details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/20 p-5 cursor-pointer shadow-sm">
+            <summary class="flex items-center justify-between font-bold text-sm text-on-surface list-none">
+              <span>۳. آیا امکان خرید از طریق پلتفرم‌های واسط مانند باسلام وجود دارد؟</span>
+              <span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <p class="text-xs text-on-surface-variant leading-relaxed mt-3 pt-3 border-t border-outline-variant/15">
+              بله! فروش برتر دارای غرفه تاییدشده رسمی در پلتفرم باسلام است و در صورتی که تمایل به پرداخت از طریق درگاه‌های پرداخت امن واسط دارید، می‌توانید سفارش خود را از غرفه باسلام ثبت فرمایید.
+            </p>
+          </details>
+
+          <!-- FAQ 4 -->
+          <details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/20 p-5 cursor-pointer shadow-sm">
+            <summary class="flex items-center justify-between font-bold text-sm text-on-surface list-none">
+              <span>۴. شرایط استفاده از مهلت تست ۷ روزه چیست؟</span>
+              <span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <p class="text-xs text-on-surface-variant leading-relaxed mt-3 pt-3 border-t border-outline-variant/15">
+              در صورت وجود نقص فنی ذاتی، عدم تطابق کالا با مشخصات درج‌شده در سایت، یا مشکل در اصالت محصول، تا ۷ روز پس از دریافت، کافی است به پشتیبانی تلگرام پیام دهید تا هماهنگی‌های لازم جهت بازگشت یا تعویض انجام شود.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Bottom Direct Contact CTA -->
+      <section class="bg-surface-container-highest/60 rounded-3xl p-8 text-center flex flex-col items-center border border-outline-variant/20">
+        <h3 class="text-xl font-bold text-on-surface mb-2">هنوز سوالی دارید؟</h3>
+        <p class="text-xs text-on-surface-variant mb-6 max-w-md">ما مشتاقانه آماده پاسخگویی و ارائه مشاوره رایگان تخصصی به شما هستیم.</p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="https://t.me/FrooshBartar_Support" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-primary-container text-white rounded-full text-xs font-semibold hover:bg-primary active:scale-95 transition-all shadow-sm flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-[18px]">send</span>
+            <span>گفتگو با مدیر پشتیبانی</span>
+          </a>
+          <a href="contact.html" class="px-6 py-3 bg-surface-container text-on-surface rounded-full text-xs font-medium hover:bg-surface-container-high transition-colors">
+            مشاهده فرم و اطلاعات تماس
+          </a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Site Footer -->
+    <footer class="w-full bg-surface-container-low px-4 sm:px-6 pt-12 pb-16 mt-16 text-on-surface-variant border-t border-outline-variant/20">
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center gap-2 mb-1">
+            <img src="assets/images/logo.png" alt="فروش برتر" class="h-6 w-auto"/>
+            <span class="text-lg font-bold text-on-surface">فروش برتر</span>
+          </div>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            منتخبی از گجت‌ها و لوازم جانبی دیجیتال با بالاترین استاندارد طراحی و کیفیت بین‌المللی.
+          </p>
+        </div>
+        
+        <div class="flex flex-col gap-2">
+          <span class="text-sm text-on-surface font-semibold mb-1">لینک‌های اصلی</span>
+          <a href="index.html" class="text-xs hover:text-primary transition-colors">صفحه اصلی</a>
+          <a href="products.html" class="text-xs hover:text-primary transition-colors">محصولات</a>
+          <a href="about.html" class="text-xs text-primary font-medium hover:underline">درباره ما</a>
+          <a href="contact.html" class="text-xs hover:text-primary transition-colors">تماس با ما</a>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <span class="text-sm text-on-surface font-semibold mb-1">سفارش و پشتیبانی</span>
+          <a href="https://t.me/FrooshBartar_Support" target="_blank" rel="noopener noreferrer" class="text-xs hover:text-primary transition-colors">ثبت سفارش در تلگرام</a>
+          <a href="#guide" class="text-xs hover:text-primary transition-colors">راهنمای خرید</a>
+          <a href="#" class="text-xs hover:text-primary transition-colors">قوانین و حریم خصوصی</a>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <span class="text-sm text-on-surface font-semibold mb-1">پشتیبانی هوشمند</span>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            پاسخگویی سریع ۲۴ ساعته در تلگرام و پلتفرم‌های اختصاصی فروشگاهی.
+          </p>
+          <div class="flex items-center gap-2 mt-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+            <span class="text-xs text-on-surface font-medium">ضمانت اصالت و سلامت کالا</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-5xl mx-auto pt-6 border-t border-outline-variant/15 text-center">
+        <p class="text-xs text-outline">
+          © ۱۴۰۳ تمامی حقوق برای فروش برتر محفوظ است. طراحی با الهام از استانداردهای برتر بین‌المللی.
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Floating Bottom Navigation Bar (Mobile) -->
+  <nav class="fixed bottom-0 w-full z-50 pb-safe glass-bottom-bar md:hidden" data-active-classes="text-primary font-bold">
+    <div class="flex justify-around items-center h-16 px-4">
+      <a href="index.html" data-path="home" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-11 text-on-surface-variant transition-colors">
+        <span class="material-symbols-outlined text-[22px]">home</span>
+        <span class="text-xs">خانه</span>
+      </a>
+      <a href="products.html" data-path="products" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-11 text-on-surface-variant transition-colors">
+        <span class="material-symbols-outlined text-[22px]">devices</span>
+        <span class="text-xs">محصولات</span>
+      </a>
+      <a href="about.html" data-path="about" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-11 text-primary font-bold transition-colors">
+        <span class="material-symbols-outlined text-[22px]">info</span>
+        <span class="text-xs">درباره ما</span>
+      </a>
+      <a href="contact.html" data-path="contact" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-11 text-on-surface-variant transition-colors">
+        <span class="material-symbols-outlined text-[22px]">alternate_email</span>
+        <span class="text-xs">تماس</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Modals -->
+  <div id="orderModal" class="modal-backdrop">
+    <div class="modal-content p-6">
+      <div class="flex items-center justify-between pb-4 border-b border-outline-variant/20 mb-4">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-[24px]">send</span>
+          <h3 class="text-base font-bold text-on-surface">ثبت سفارش مستقیم در تلگرام</h3>
+        </div>
+        <button onclick="closeModal('orderModal')" class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <div class="flex items-center gap-4 p-3 bg-surface-container-low rounded-2xl mb-4">
+        <img id="orderModalImage" src="assets/images/sonic-pro.jpeg" alt="" class="w-16 h-16 object-contain rounded-xl bg-white p-1 border border-outline-variant/20"/>
+        <div class="flex-grow">
+          <div class="flex items-center justify-between">
+            <h4 id="orderModalTitle" class="font-bold text-on-surface text-sm">Sonic Pro</h4>
+            <span id="orderModalCategory" class="text-xs px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container">صوتی</span>
+          </div>
+          <p class="text-xs text-on-surface-variant mt-0.5">قیمت واحد:</p>
+          <span id="orderModalPrice" class="text-sm font-bold text-primary tabular-nums">۴,۷۵۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3 mb-4">
+        <div>
+          <label class="block text-xs font-semibold text-on-surface mb-1">تعداد سفارش:</label>
+          <div class="flex items-center justify-between bg-surface-container rounded-xl p-1.5 border border-outline-variant/30">
+            <button onclick="updateOrderQuantity(1)" class="w-7 h-7 rounded-lg bg-white flex items-center justify-center text-on-surface hover:bg-primary hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-[16px]">add</span>
+            </button>
+            <span id="orderQuantityText" class="text-sm font-bold tabular-nums">۱</span>
+            <button onclick="updateOrderQuantity(-1)" class="w-7 h-7 rounded-lg bg-white flex items-center justify-center text-on-surface hover:bg-primary hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-[16px]">remove</span>
+            </button>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-on-surface mb-1">رنگ / نسخه:</label>
+          <select onchange="updateOrderColor(this.value)" class="w-full bg-surface-container rounded-xl py-2 px-3 text-xs border border-outline-variant/30 focus:border-primary focus:bg-white transition-colors">
+            <option value="نقره‌ای تیتانیومی">نقره‌ای تیتانیومی</option>
+            <option value="مشکی مات (Space Black)">مشکی مات (Space Black)</option>
+            <option value="سفید سرامیکی">سفید سرامیکی</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="space-y-2 mb-4">
+        <div class="grid grid-cols-2 gap-2">
+          <input type="text" id="orderCustomerName" oninput="updateTelegramPreviewMessage()" placeholder="نام و نام خانوادگی (اختیاری)" class="w-full text-xs p-2.5 bg-surface-container rounded-xl border border-outline-variant/30 focus:bg-white focus:border-primary transition-colors"/>
+          <input type="text" id="orderCustomerPhone" oninput="updateTelegramPreviewMessage()" placeholder="شماره تماس (اختیاری)" class="w-full text-xs p-2.5 bg-surface-container rounded-xl border border-outline-variant/30 focus:bg-white focus:border-primary transition-colors" dir="ltr"/>
+        </div>
+        <input type="text" id="orderCustomerCity" oninput="updateTelegramPreviewMessage()" placeholder="شهر محل تحویل (مثال: شیراز)" class="w-full text-xs p-2.5 bg-surface-container rounded-xl border border-outline-variant/30 focus:bg-white focus:border-primary transition-colors"/>
+      </div>
+
+      <div class="mb-4">
+        <div class="flex items-center justify-between text-xs text-on-surface-variant mb-1">
+          <span>پیش‌نمایش پیام تلگرام:</span>
+          <button onclick="copyOrderText()" class="text-primary hover:underline flex items-center gap-0.5">
+            <span class="material-symbols-outlined text-[14px]">content_copy</span>
+            <span>کپی متن</span>
+          </button>
+        </div>
+        <pre id="orderTelegramPreview" class="text-xs bg-surface-container-high/60 p-3 rounded-xl whitespace-pre-wrap font-sans text-on-surface-variant max-h-24 overflow-y-auto border border-outline-variant/20"></pre>
+      </div>
+
+      <div class="flex items-center justify-between pt-3 border-t border-outline-variant/20 mb-4">
+        <span class="text-xs text-on-surface-variant">مبلغ نهایی قابل پرداخت:</span>
+        <span id="orderModalTotalPrice" class="text-base font-bold text-primary tabular-nums">۴,۷۵۰,۰۰۰ تومان</span>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-2">
+        <button onclick="submitOrderToTelegram()" class="w-full py-3 bg-primary-container text-white rounded-xl font-bold text-sm hover:bg-primary active:scale-95 transition-all shadow-md flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-[20px]">send</span>
+          <span>ارسال سفارش به پشتیبان در تلگرام</span>
+        </button>
+        <button onclick="closeModal('orderModal')" class="w-full sm:w-auto px-5 py-3 bg-surface-container text-on-surface rounded-xl text-sm font-medium hover:bg-surface-container-high transition-colors">
+          انصراف
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="searchModal" class="modal-backdrop">
+    <div class="modal-content p-6">
+      <div class="flex items-center gap-3 pb-3 border-b border-outline-variant/20 mb-4">
+        <span class="material-symbols-outlined text-primary text-[24px]">search</span>
+        <input type="text" id="searchInput" oninput="handleSearchInput(this.value)" placeholder="نام کالا، دسته‌بندی یا ویژگی مورد نظر..." class="w-full bg-transparent text-sm focus:outline-none placeholder:text-outline"/>
+        <button onclick="closeModal('searchModal')" class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <div id="searchResultsContainer" class="space-y-2 max-h-80 overflow-y-auto"></div>
+    </div>
+  </div>
+
+  <div id="profileModal" class="modal-backdrop">
+    <div class="modal-content p-6 max-w-sm text-center">
+      <div class="w-14 h-14 rounded-full bg-primary/10 text-primary mx-auto flex items-center justify-center mb-3">
+        <span class="material-symbols-outlined text-[28px]">verified</span>
+      </div>
+      <h3 class="text-lg font-bold text-on-surface mb-1">فروش برتر | ارتباط مستقیم</h3>
+      <p class="text-xs text-on-surface-variant mb-6">
+        ارائه کالاهای اصلی با ضمانت معتبر و پشتیبانی سریع در شبکه‌های اجتماعی
+      </p>
+
+      <div class="space-y-2 mb-6 text-right">
+        <a href="https://t.me/FrooshBartar_Support" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">send</span>
+            <span class="text-xs font-semibold text-on-surface">کانال و پشتیبانی تلگرام</span>
+          </div>
+          <span class="material-symbols-outlined text-[16px] text-outline">chevron_left</span>
+        </a>
+
+        <a href="https://www.basalam.com" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">storefront</span>
+            <span class="text-xs font-semibold text-on-surface">غرفه رسمی در باسلام</span>
+          </div>
+          <span class="material-symbols-outlined text-[16px] text-outline">chevron_left</span>
+        </a>
+
+        <a href="contact.html" class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">call</span>
+            <span class="text-xs font-semibold text-on-surface">اطلاعات تماس و آدرس</span>
+          </div>
+          <span class="material-symbols-outlined text-[16px] text-outline">chevron_left</span>
+        </a>
+      </div>
+
+      <button onclick="closeModal('profileModal')" class="w-full py-2.5 bg-surface-container text-on-surface rounded-xl text-xs font-medium hover:bg-surface-container-high transition-colors">
+        بستن
+      </button>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
